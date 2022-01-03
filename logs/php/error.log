@@ -1,0 +1,16 @@
+[02-Jan-2022 22:37:28 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/update.php on line 413
+[02-Jan-2022 22:37:28 UTC] PHP Stack trace:
+[02-Jan-2022 22:37:28 UTC] PHP   1. {main}() /Users/sweet/Local Sites/audreys-list/app/public/wp-cron.php:0
+[02-Jan-2022 22:37:28 UTC] PHP   2. do_action_ref_array() /Users/sweet/Local Sites/audreys-list/app/public/wp-cron.php:138
+[02-Jan-2022 22:37:28 UTC] PHP   3. WP_Hook->do_action() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/plugin.php:518
+[02-Jan-2022 22:37:28 UTC] PHP   4. WP_Hook->apply_filters() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/class-wp-hook.php:327
+[02-Jan-2022 22:37:28 UTC] PHP   5. wp_update_plugins() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/class-wp-hook.php:303
+[02-Jan-2022 22:37:28 UTC] PHP   6. trigger_error() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/update.php:413
+[02-Jan-2022 22:37:28 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/update.php on line 693
+[02-Jan-2022 22:37:28 UTC] PHP Stack trace:
+[02-Jan-2022 22:37:28 UTC] PHP   1. {main}() /Users/sweet/Local Sites/audreys-list/app/public/wp-cron.php:0
+[02-Jan-2022 22:37:28 UTC] PHP   2. do_action_ref_array() /Users/sweet/Local Sites/audreys-list/app/public/wp-cron.php:138
+[02-Jan-2022 22:37:28 UTC] PHP   3. WP_Hook->do_action() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/plugin.php:518
+[02-Jan-2022 22:37:28 UTC] PHP   4. WP_Hook->apply_filters() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/class-wp-hook.php:327
+[02-Jan-2022 22:37:28 UTC] PHP   5. wp_update_themes() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/class-wp-hook.php:303
+[02-Jan-2022 22:37:28 UTC] PHP   6. trigger_error() /Users/sweet/Local Sites/audreys-list/app/public/wp-includes/update.php:693
