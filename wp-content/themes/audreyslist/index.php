@@ -1,7 +1,15 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * Theme audreysList
+ * 
+ * @since Twenty Twentytwo 1.0
+ */
+?>
 
-<?php if ( have_posts() ) : ?>
-<?php while ( have_posts() ) : the_post(); ?>
+<?php get_header();
+
+if ( have_posts() ) : 
+while ( have_posts() ) : the_post(); ?>
   <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="post-header">
        <div class="date"><?php the_time( 'M j y' ); ?></div>
