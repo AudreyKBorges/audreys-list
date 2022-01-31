@@ -1,6 +1,8 @@
 <?php 
 /**
- * Theme audreysList
+ * Description: This is a custom theme created for audreyslist.org
+ * 
+ * @package Theme_AudreysList
  * 
  * @since Twenty Twentytwo 1.0
  */
@@ -8,8 +10,8 @@
 
 <?php get_header();
 
-if ( have_posts() ) : 
-while ( have_posts() ) : the_post(); ?>
+if (have_posts()) : 
+    while ( have_posts() ) : the_post(); ?>
   <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="post-header">
        <div class="date"><?php the_time( 'M j y' ); ?></div>
