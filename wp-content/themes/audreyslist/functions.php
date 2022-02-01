@@ -8,7 +8,7 @@
  */
 
 // Setup
-echo 'Hello World!';
+
 
 // Includes
 
