@@ -1,26 +1,5 @@
-<?php 
-/**
- * Header
- * 
- * @package Theme_AudreysList
- * @author Audrey Borges audreyborges7@gmail.com
- * @since 1.0
- * 
- * PHP 7.4.27
- * Theme audreysList
- * 
- * @since Twenty Twentytwo 1.0
- */
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-<html class="no-js" <?php language_attributes(); ?>>
-  <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <meta name="designer" content="https://www.audreyslist.org" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,11 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    <?php wp_head(); ?>
-  </head>
-  <header id="js-site-header" class="site-header sticky" role="banner">
-			<div class="site-header__inner alignwide">
-    <a href="index.php">
   </head>
   <header>
     <a href="index.html">
@@ -48,3 +22,11 @@
     <img class="instagram-icon" src="instagram.png" alt="Instagram icon">
     <img class="twitter-icon" src="twitter.png" alt="twitter icon">
   </header>
+  <body>
+    <footer>
+        Copyright &copy; 2019
+        <script>new Date().getFullYear() > 2019 && document.write("-" + new Date().getFullYear());</script>,
+        Audrey's List.
+    </footer>
+  </body>
+</html>

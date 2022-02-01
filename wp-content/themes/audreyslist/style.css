@@ -1,20 +1,154 @@
-/*
-Theme name: Audrey's List
-Theme URI: https://wordpress.org/themes/AudreysList
-Description: This is a custom theme created for audreyslist.org
-Version: 1.0
-Author: Audrey Borges
-Author URI: https://www.audreyslist.org
-*/
+/**
+ * Theme Name:  Audrey's List
+ * Description: A WordPress starter theme by Audrey.
+ * Author:      Audrey Borges
+ * Author URI:  https://audreyslist.org/
+ * Version:     1.0
+ * Text Domain: audreysList
+ * WordPress version: 5.9
+ * PHP version: 7.4
+ */
 
-#header {
-	background: #90a090;
-	border-bottom: double 3px #aba;
-	border-left: solid 1px #9a9;
-	border-right: solid 1px #565;
-	border-top: solid 1px #9a9;
-	font: italic normal 230% 'Times New Roman', Times, serif;
-	letter-spacing: 0.2em;
-	margin: 0;
-	padding: 15px 10px 15px 60px;
+/*----Universal Styles----*/
+
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+
+/* Header styles */
+/* top-app-bar */
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    left: 0px;
+    top: 0px;
+    
+    /* FF4848 */
+    
+    background: #FF4848;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Audrey's-List-logo 1 */
+
+#logo {
+    position: absolute;
+    left: 4.72%;
+    right: 68.06%;
+    top: 16.67%;
+    bottom: 13.64%;
+    max-width: 98px;
+    max-height: 46px;
+    background: url(logo.png);
+}
+
+/* Keep in touch. */
+
+.header-text {  
+    position: absolute;
+    right: 11.39%;
+    top: 2%;
+    bottom: 53.03%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+/* identical to box height, or 143% */
+
+    letter-spacing: 0.25px;
+
+    color: #FFFFFF;
+}
+
+/* info@audreyslist.org */
+
+.header-text2 {
+    position: absolute;
+    right: 11.39%;
+    top: 35%;
+    bottom: 22.73%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    
+    letter-spacing: 0.25px;
+    
+    color: #FFFFFF;
+}
+
+/* facebook */
+
+.fb-icon {
+    position: absolute;
+    left: 90.83%;
+    right: 4.72%;
+    top: 9.09%;
+    bottom: 66.67%;
+    background: url(facebook.png);
+    height: 16px;
+    width: 16px;
+}
+
+/* instagram */
+
+.instagram-icon {
+    position: absolute;
+    left: 90.83%;
+    right: 4.72%;
+    top: 37.88%;
+    bottom: 37.88%;
+    background: url(instagram.png);
+    height: 16px;
+    width: 16px;
+}
+
+/* twitter */
+
+.twitter-icon {
+    position: absolute;
+    left: 90.83%;
+    right: 4.72%;
+    top: 68.18%;
+    bottom: 7.58%;
+    background: url(twitter.png);
+    height: 16px;
+    width: 16px;
+}
+
+/* body styles */
+
+body {
+    background: linear-gradient(180deg, rgba(255, 211, 113, 0.14) 0%, rgba(157, 218, 198, 0.35) 100%);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 640px;
+}
+
+footer {
+    font-family: 'Noto Sans', sans-serif; 
+    text-align: right;
+    font-size: 13px; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+    width: 100%;
+    padding: 3.4em;
+    position: relative;
+    max-width: 100%;
+    background-size: 100%;
+    background: #DBD7C8;
+    color: #000;
+    position: absolute;
+    height: 30px;
+    left: 0px;
+    top: 610px;  
+}
+
 }
