@@ -5,7 +5,7 @@ This project is a live website, https://audreyslist.org/, which contains a list 
 - Fall 2019 - built website using HTML/CSS
 - Spring 2020 - redesigned website
 - Fall 2020 - redesigned website again to make it responsive
-- Spring 2022 - converted website to WordPress for easier management and scalability
+- Spring 2022 - converted website to WordPress for easier management and scalability, designed custom theme, audreyslist
 - Fall 2022 - created user accounts and log in/ log out features so that users can add their own resources
 - UPCOMING - sort function for users to view types of resources
          - blog
