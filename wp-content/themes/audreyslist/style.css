@@ -15,140 +15,696 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 320px) {
-
-/* Header styles */
-/* top-app-bar */
-
-header {
-    position: absolute;
-    width: 100%;
-    height: 66px;
-    left: 0px;
-    top: 0px;
-    
-    /* FF4848 */
-    
-    background: #FF4848;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-/* Audrey's-List-logo 1 */
+a {
+    color: #FF4848;
+    text-decoration: none;
+}
+
+.uagb-post-grid .uagb-post__title a {
+    pointer-events: none;
+}
+
+@media only screen and (min-width:320px) {
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+/* Header styles */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    z-index: 2;
+    box-shadow: 0px 4px 4px #9DDAC6;
+    background: #FF4848;
+}
+
+/* Audrey's-List-logo */
 
 #logo {
     position: absolute;
+    display: inline-flex;
     left: 4.72%;
     right: 68.06%;
-    top: 16.67%;
-    bottom: 13.64%;
-    max-width: 98px;
-    max-height: 46px;
+    top: 15%;
+    max-width: 185px;
+    max-height: 100px;
     background: url(logo.png);
 }
 
-/* Keep in touch. */
+.flex-container {
+    display: flex;
+    position: relative;
+}
 
-.header-text {  
-    position: absolute;
-    right: 11.39%;
-    top: 2%;
-    bottom: 53.03%;
+.container {
+    display: none;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Nav menu dropdown */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    text-align: center;
+    margin-top: 7.60em;
+    width: 100%;
+}
+
+.topnav #nav {
+    display: none;
+}
+
+.topnav a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 14px;
-    line-height: 20px;
-/* identical to box height, or 143% */
-
-    letter-spacing: 0.25px;
-
-    color: #FFFFFF;
+    display: block;
 }
 
-/* info@audreyslist.org */
-
-.header-text2 {
+.topnav a.icon {
+    display: block;
     position: absolute;
-    right: 11.39%;
-    top: 35%;
-    bottom: 22.73%;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 12px;
-    line-height: 20px;
-    /* identical to box height, or 167% */
-    
-    letter-spacing: 0.25px;
-    
-    color: #FFFFFF;
+    right: 0;
+    top: 0;
 }
 
-/* facebook */
-
-.fb-icon {
-    position: absolute;
-    left: 90.83%;
-    right: 4.72%;
-    top: 9.09%;
-    bottom: 66.67%;
-    background: url(facebook.png);
-    height: 16px;
-    width: 16px;
+.topnav a:hover {
+    background: linear-gradient(90deg, #FFD371 0%, #C2FFD9 50%, #FF4848 100%);
+    color: #333;
 }
 
-/* instagram */
-
-.instagram-icon {
-    position: absolute;
-    left: 90.83%;
-    right: 4.72%;
-    top: 37.88%;
-    bottom: 37.88%;
-    background: url(instagram.png);
-    height: 16px;
-    width: 16px;
-}
-
-/* twitter */
-
-.twitter-icon {
-    position: absolute;
-    left: 90.83%;
-    right: 4.72%;
-    top: 68.18%;
-    bottom: 7.58%;
-    background: url(twitter.png);
-    height: 16px;
-    width: 16px;
+#menu {
+    display: block !important;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    float: right;
+    margin-top: 45px;
+    margin-right: 25px;
 }
 
 /* body styles */
 
 body {
-    background: linear-gradient(180deg, rgba(255, 211, 113, 0.14) 0%, rgba(157, 218, 198, 0.35) 100%);
+    background: #fff;
     background-repeat: no-repeat;
-    width: 360px;
-    height: 640px;
+    min-width: 360px;
+    margin: 0;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+#content {
+    position: relative;
+    display: block;
+    bottom: 0;
+    background: transparent;
+    width: 100%;
+    margin-bottom: -25em;
+}
+  
+/* Footer styles */
+
+.footer-container {
+    min-height: 100%;
+    position: relative;
 }
 
 footer {
-    font-family: 'Noto Sans', sans-serif; 
-    text-align: right;
-    font-size: 13px; 
-    margin-top: 0; 
-    margin-bottom: 0; 
-    width: 100%;
-    padding: 3.4em;
-    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    text-align: left;
+    font-size: 11px; 
     max-width: 100%;
-    background-size: 100%;
-    background: #DBD7C8;
+    background: rgba(219, 215, 200, 0.6);
     color: #000;
+    height: auto;
+    overflow: hidden;
     position: absolute;
-    height: 30px;
-    left: 0px;
-    top: 610px;  
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: flex-end;
 }
 
+.logo2 {
+    position: relative;
+    background: url(logo2.png);
+    width: 120px;
+    height: 70px;
+    float: left;
 }
+
+.copyright {
+    position: relative;
+    float: left;
+    font-size: 12px;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Keep in touch. */
+
+.footer-text {  
+    position: relative;
+    float: left;
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    flex: 100%;
+    color: #000000;
+}
+
+/* info@audreyslist.org */
+
+.footer-text2 {
+    position: relative;
+    float: left;
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    flex: 100%;
+    color: #000000;
+}
+
+.socials {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.socials a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+/* facebook */
+
+.fb-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url(facebook.png);
+}
+
+/* instagram */
+
+.instagram-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url(instagram.png);
+}
+
+/* linkedin */
+
+.linkedin-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url(linkedin.png);
+}
+
+/* twitter */
+
+.twitter-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url(twitter.png);
+}
+
+/* Home Page */
+
+/* Navigating the World of Autism */
+
+.uagb-heading-text {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 190px;
+    left: 16px;
+    top: 160px;
+    background: linear-gradient(to right, #FF4848, #FFD371, #C2FFD9, #9DDAC6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .2px #333;
+    font-family: 'Abril Fatface', serif;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 0;
+    align-items: center;
+    letter-spacing: 0.05em;
+}
+
+/* Family image */
+
+.wp-block-image {
+    margin: 0, auto;
+    padding-top: 6em;
+    padding-bottom: 0;
+}
+
+/* Paragraph text */
+
+.home-text {
+    display: inline-block;
+    top: 350px;
+    background: linear-gradient(180deg, rgba(219, 215, 200, 0.6) 0%,
+    rgba(219, 215, 200, 0) 100%);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin: 10px;
+    padding: 1rem;
+    height: auto;
+}
+
+/* About Page */
+
+/* About Audrey's List */
+
+.about, .autism, .resources, .contact {
+    margin-top: 6em;
+    position: relative;
+    width: 328px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    color: #FF4848;
+    padding-left: 22px;
+}
+
+.aboutH3 {
+    color: #c2ffd9;
+    -webkit-text-stroke: .2px #9ddac6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+/* Image */
+
+.wp-image-159 {
+    margin-top: -5em;
+}
+
+/* Paragraph text */
+
+.about-text {
+    display: inline-block;
+    top: 360px;
+    background: linear-gradient(180deg, rgba(219, 215, 200, 0.6) 0%, 
+    rgba(219, 215, 200, 0) 100%);
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    padding: 1rem;
+}
+
+/* About subtext */
+
+.about-subtext {
+    position: absolute;
+    width: 170px;
+    height: 39px;
+    left: 22px;
+    top: 216px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+/* Autism Page */
+
+.autism-text {
+    position: absolute;
+    width: 170px;
+    height: 39px;
+    left: 22px;
+    top: 216px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+.wp-image-197 {
+    margin-top: -5em;
+}
+
+/* Table */
+
+.wp-block-table td, .wp-block-table th {
+    border: 5px solid #fff !important;
+}
+
+.table {
+    /*background: rgba(255, 211, 113, 0.35);*/
+    background: linear-gradient(to bottom right, #ffe9b8, #e6ffef);
+}
+
+td {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid #fff;
+}
+
+.table-titles {
+    padding: 0;
+    background: #FF4848;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 14px;
+    color: #FFD371;
+}
+
+/* Contact Page */
+
+.contact-text {
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 22px;
+    top: 157px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+
+/* Form */
+
+.uagb-forms-main-form {
+    margin: 1.5em;
+    padding-top: 7em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.uagb-forms-main-submit-button {
+    background: linear-gradient(90deg, #FFD371 0%, #FF4848 100%);
+}
+
+.uagb-forms-input:focus {
+    color: #9DDAC6;
+}
+
+/* Success/Fail message */
+.uagb-block-6e413ebd .uagb-forms-success-message, .uagb-forms-failed-message {
+    margin: 10em;
+}
+
+/* Resources Page */
+
+.resources-text {
+    position: static;
+    padding-left: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+}
+
+.uagb-post__inner-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wp-block-button__link {
+    background: linear-gradient(90deg, #FFD371 0%, #FF4848 100%);
+}
+
+.wp-block-columns {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+}
+
+@media only screen and (min-width:768px) {
+    
+/* Home Page */
+
+/* Navigating the World of Autism */
+
+.uagb-heading-text {
+    font-size: 5vw !important;
+    position: absolute;
+    width: 321px;
+    left: 33px;
+    top: 250px;
+
+}
+
+.home-text, .about-text {
+    margin: 3em;
+}
+
+.about, .autism, .resources, .contact {
+    font-size: 26px;
+    margin-top: 5em;
+}
+
+/* About Page */
+
+.about-subtext, .autism-text {
+    top: 315px;
+    width: 275px;
+    font-size: 17px;
+}
+
+.resources-text, .contact-text {
+    font-size: 17px;
+}
+
+/* Contact Page */
+
+.contact-text {
+    top: 180px;
+}
+
+.contact {
+    width: 500px;
+}
+}
+
+@media only screen and (min-width:1024px) {
+/* Home Page */
+
+/* Navigating the World of Autism */
+
+.uagb-heading-text {
+    font-size: 4vw !important;
+    position: absolute;
+    width: 500px;
+    left: 4.72%;
+    top: 150px;
+
+}
+
+.home-text {
+    position: absolute;
+    width: 485px;
+    margin-top: 2em;
+}
+
+.about, .autism, .resources, .contact {
+    font-size: 32px;
+    width: 600px;
+    padding-left: 70px;
+}
+
+.wp-block-image img {
+    max-height: 100vh;
+    max-width: 100%;
+    display: inline-block;
+}
+
+/* About Page */
+
+.about-subtext, .autism-text {
+    top: 500px;
+    width: 400px;
+    font-size: 21px;
+    line-height: 1.5;
+    padding-left: 60px;
+}
+
+.resources-text, .contact-text {
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+/* Contact Page */
+
+.contact-text {
+    font-size: 17px;
+    padding-top: 2em;
+    width: 850px;
+    line-height: 1.6;
+}
+
+.uagb-forms-main-form {
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+/* Desktop Nav */
+
+.icon {
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.topnav {
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    margin-top: 2.75em;
+    width: 50%;
+    float: right;
+}
+
+.topnav #nav {
+    display: inline-flex;
+}
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+
+.topnav a.icon {
+    display: inline;
+    position: relative;
+}
+
+.topnav a:hover {
+    background: #C2FFD9;
+    border-radius: 20px;
+    color: #FF4848;
+}
+
+#menu {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.page_item {
+    float: left;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.page_item a {
+  display: block;
+}
+
+/* Space between footer and content */
+#content {
+    margin-bottom: .25em;
+}
+
+/* Space on each side of content */
+.wp-block-columns {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* Footer */
+.footer-container {
+    min-height: 35%;
+    position: relative;
+}
+    
+}
+
+@media only screen and (min-width:1201px) {
+    .home-text {
+        margin-left: 3.5em;
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    .home-text {
+        margin-top: 4em;
+    }
+}
+

@@ -23,7 +23,7 @@ header('Retry-After: 600');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="https://audreyslist.org/wp-content/uploads/2022/01/cropped-ALlogo-32x32.png">
+    <link rel="icon" href="https://audreyslist.org/wp-content/uploads/2022/05/cropped-apple-touch-icon-32x32.png">
     <link rel="stylesheet" href="https://audreyslist.org/wp-content/maintenance/assets/styles.css">
     <script src="https://audreyslist.org/wp-content/maintenance/assets/timer.js"></script>
     <title>Scheduled Maintenance</title>

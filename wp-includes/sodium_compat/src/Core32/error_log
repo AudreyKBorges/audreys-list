@@ -1,0 +1,8 @@
+[28-Mar-2022 03:09:16 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Core32_Curve25519' not found in /home/audreyslist/public_html/wp-includes/sodium_compat/src/Core32/Ed25519.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/audreyslist/public_html/wp-includes/sodium_compat/src/Core32/Ed25519.php on line 10
+[28-Mar-2022 03:09:17 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Core32_Curve25519' not found in /home/audreyslist/public_html/wp-includes/sodium_compat/src/Core32/Ed25519.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/audreyslist/public_html/wp-includes/sodium_compat/src/Core32/Ed25519.php on line 10

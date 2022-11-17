@@ -1,0 +1,22 @@
+body.login div#login p#nav a,
+body.login div#login p#backtoblog a {
+    color: #fff !important; 
+}
+
+body.login {
+    background-image: linear-gradient(#ff4848, #ffd371) !important;
+}
+
+.wp-core-ui .button-primary {
+    background: #9ddac6 !important;
+    border-color: #c2ffd9 !important;
+    color: #333 !important;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+    color: #333 !important;
+}
+
+p#nav {
+    color: #fff !important;
+}
